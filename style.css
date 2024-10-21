@@ -1,0 +1,250 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav-item a{
+    font-size: 19px;
+    padding: 8px 12px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* Style for the nav link */
+.navbar-nav .nav-link {
+    position: relative; /* Required for the positioning of the pseudo-element */
+    padding-bottom: 5px; /* Space for the underline */
+}
+
+/* Horizontal line on hover */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute; /* Position relative to the link */
+    left: 0; /* Start from the left */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full width */
+    height: 2px; /* Height of the line */
+    background-color: #d04e3d; /* Color of the line */
+    transform: scaleX(0); /* Start scaled down to 0 */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Scale the line on hover */
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+}
+
+/* Change color on hover */
+.navbar-nav .nav-link:hover {
+    color: #d04e3d; /* Change text color on hover */
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.About-Company h2{
+    position: relative;
+    color: #444444;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.About-Company h2:after{
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0px;
+    bottom: 0px;
+    width: 60px;
+    height: 3px;
+    background-color: #d04e3d;
+    transform: skewX(-45deg);
+}
+
+.About-Company button{
+    align-items: center;
+    background-color: initial;
+    background-image: linear-gradient(#464d55, #25292e);
+    border-radius: 8px;
+    border-width: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    font-family: expo-brand-demi, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 18px;
+    height: 52px;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 32px;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all 150ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.About-Company button:hover{
+    transition: all 3s ease;
+    background: green;
+}
+
+.card {
+    height: 100%; /* Make all cards take full height */
+}
+.bg-dark-custom {
+    background-color: #0b0c26; /* Dark background for odd cards */
+    color: white; /* White text color */
+}
+.bg-green-custom {
+    background-color: green; /* Green background for even cards */
+    color: white; /* White text color */
+}
+
+.pt60 {
+    padding-top: 20px;
+}
+
+.pb60 {
+    padding-bottom: 20px;
+}
+
+.Fundamental-Rules h2{
+    position: relative;
+    color: #444444;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+} 
+.Fundamental-Rules h2:after{
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0px;
+    bottom: 0px;
+    width: 60px;
+    height: 3px;
+    background-color: #d04e3d;
+    transform: skewX(-45deg);
+} 
+
+.bg-dark-custom {
+    background-color: #0b0c26;
+    color: white;
+}
+
+.bg-green-custom {
+    background-color: green;
+    color: white;
+}
+
+/* Card hover effect */
+.hover-card {
+    transition: transform 9s ease,  0.3s ease;
+}
+
+.hover-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.2);
+}
+
+
+.img-container {
+    perspective: 2000px;
+    display: inline-block;
+    /* overflow: hidden; */
+}
+
+.animated-img {
+    transition: transform 1.5s ease-in-out, box-shadow 1.5s ease-in-out; /* Smooth and slow effect */
+    transform-style: preserve-3d;
+}
+
+
+.animated-img:hover {
+    transform: scale(1.2); /* Slow increase in size */
+    box-shadow: 0 15px 30px rgba(238, 235, 235, 0.2); /* Adds a shadow for a nice depth effect */
+}
+
+
+.Fundamental-Rules .card {
+    transition: transform 2.5s ease-in-out, box-shadow 1.5s ease-in-out; /* Smooth and slow effect */
+    transform-style: preserve-3d;
+}
+
+
+.Fundamental-Rules .card:hover {
+    transform: scale(0.8); /* Slow increase in size */
+    box-shadow: 0 15px 30px rgba(121, 24, 24, 0.551); /* Adds a shadow for a nice depth effect */
+}
+
+.our-services .card{
+    transition: all 2s ease;
+    overflow: hidden;
+}
+
+
+.card-img-top:hover{
+    transform: scale(1.1); 
+    transition: all 1s ease;
+}
+
+
+.services-section{
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+
+.our-services h2{
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+} 
+.our-services h2:after{
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0px;
+    bottom: 0px;
+    width: 60px;
+    height: 3px;
+    background-color: #d04e3d;
+    transform: skewX(-45deg);
+}
+
+
+.card-hover img:hover{
+    transform: scale(1.1);
+    transition: all 1.5s ease;
+    
+}
+
+.footer li a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-logo img{
+box-shadow: 12px 2px 7px black;
+}
+
+.footer-terms li {
+    font-weight: bold;
+    color: white;
+    margin-right: 20px; /* Space between the list items */
+}
+
+
